@@ -1,0 +1,1734 @@
+{"errorInfo":null,"connectionName":"mysql","xdebug_message":"<tr>
+    <th align='left' bgcolor='#f57900' colspan=\"5\"><span
+            style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )<\ /span>
+                Illuminate\\Database\\QueryException: Array to string conversion (Connection: mysql, SQL: insert into
+                `forms` (`title`, `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`) values
+                (Falling down the trip, He fell down the trip and slip to the floor, 1, 1, ?, 2024-01-04 11:05:05,
+                2024-01-04 11:05:05)) in
+                C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php on line
+                <i>822<\ /i>
+                        <\ /th>
+                            <\ /tr>\n
+<tr>
+    <th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack<\ /th>
+            <\ /tr>\n
+<tr>
+    <th align='center' bgcolor='#eeeeec'>#<\ /th>
+    <th align='left' bgcolor='#eeeeec'>Time<\ /th>
+    <th align='left' bgcolor='#eeeeec'>Memory<\ /th>
+    <th align='left' bgcolor='#eeeeec'>Function<\ /th>
+    <th align='left' bgcolor='#eeeeec'>Location<\ /th>
+            <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>1<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.0001<\ /td>
+    <td bgcolor='#eeeeec' align='right'>370904<\ /td>
+    <td bgcolor='#eeeeec'>{main}( )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php'
+        bgcolor='#eeeeec'>...\\server.php<b>:<\ /b>0<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>2<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.0003<\ /td>
+    <td bgcolor='#eeeeec' align='right'>371440<\ /td>
+    <td bgcolor='#eeeeec'>require_once( <font color='#00bb00'>'C:\\wamp64\\www\\checker\\public\\index.php<\ /font> )<\
+                    /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\resources\\server.php'
+        bgcolor='#eeeeec'>...\\server.php<b>:<\ /b>16<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>3<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.0126<\ /td>
+    <td bgcolor='#eeeeec' align='right'>640760<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Kernel->handle( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\public\\index.php' bgcolor='#eeeeec'>...\\index.php<b>:<\ /b>52<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>4<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.0153<\ /td>
+    <td bgcolor='#eeeeec' align='right'>936600<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php'
+        bgcolor='#eeeeec'>...\\Kernel.php<b>:<\ /b>144<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>5<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1383<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2359120<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Pipeline\\Pipeline->then( <span>$destination = <\ /span><span>class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Foundation\\Http\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php'
+        bgcolor='#eeeeec'>...\\Kernel.php<b>:<\ /b>175<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>6<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1384<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2366576<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>116<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>7<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1387<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2367064<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Http\\Middleware\\TrustProxies->handle( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>8<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1389<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2367064<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\TrustProxies.php'
+        bgcolor='#eeeeec'>...\\TrustProxies.php<b>:<\ /b>39<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>9<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1396<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2367744<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Http\\Middleware\\HandleCors->handle( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>10<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1402<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2369832<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Middleware\\HandleCors.php'
+        bgcolor='#eeeeec'>...\\HandleCors.php<b>:<\ /b>62<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>11<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1406<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2370304<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle(
+        <span>$request = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>12<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1417<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2371352<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance.php'
+        bgcolor='#eeeeec'>...\\PreventRequestsDuringMaintenance.php<b>:<\ /b>99<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>13<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1419<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2371768<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>14<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1419<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2371768<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php'
+        bgcolor='#eeeeec'>...\\ValidatePostSize.php<b>:<\ /b>27<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>15<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1423<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2372224<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>16<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1423<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2372256<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle( <span>$request = <\
+                /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TrimStrings.php'
+        bgcolor='#eeeeec'>...\\TrimStrings.php<b>:<\ /b>40<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>17<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1424<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2374136<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php'
+        bgcolor='#eeeeec'>...\\TransformsRequest.php<b>:<\ /b>21<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>18<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1426<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2374552<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle( <span>$request =
+            <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>19<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1426<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2374568<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle( <span>$request = <\
+                /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull.php'
+        bgcolor='#eeeeec'>...\\ConvertEmptyStringsToNull.php<b>:<\ /b>31<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>20<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1427<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2374568<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php'
+        bgcolor='#eeeeec'>...\\TransformsRequest.php<b>:<\ /b>21<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>21<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1431<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2375040<\ /td>
+    <td bgcolor='#eeeeec'>Proengsoft\\JsValidation\\RemoteValidationMiddleware->handle( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>22<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1432<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2375040<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:139-145}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\proengsoft\\laravel-jsvalidation\\src\\RemoteValidationMiddleware.php'
+        bgcolor='#eeeeec'>...\\RemoteValidationMiddleware.php<b>:<\ /b>61<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>23<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1432<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2375040<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php:197-201}(
+        <span>$request = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>141<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>24<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1432<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2375832<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Router->dispatch( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php'
+        bgcolor='#eeeeec'>...\\Kernel.php<b>:<\ /b>200<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>25<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1432<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2375832<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Router->dispatchToRoute( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php'
+        bgcolor='#eeeeec'>...\\Router.php<b>:<\ /b>737<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>26<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1455<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2454808<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Router->runRoute( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$route =
+                            <\ /span><span>class Illuminate\\Routing\\Route { public $uri = &#39;api\/forms\/store&#39;;
+                                    public $methods = [0 =&gt; &#39;POST&#39;]; public $action = [&#39;middleware&#39;
+                                    =&gt; [...], &#39;uses&#39; =&gt;
+                                    &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;, &#39;controller&#39;
+                                    =&gt; &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;,
+                                    &#39;namespace&#39; =&gt; NULL, &#39;prefix&#39; =&gt; &#39;api\/forms&#39;,
+                                    &#39;where&#39; =&gt; [...]]; public $isFallback = FALSE; public $controller = class
+                                    App\\Http\\Controllers\\FormController { protected $middleware = [...] }; public
+                                    $defaults = []; public $wheres = []; public $parameters = []; public $parameterNames
+                                    = []; protected $originalParameters = []; protected $withTrashedBindings = FALSE;
+                                    protected $lockSeconds = NULL; protected $waitSeconds = NULL; public
+                                    $computedMiddleware = [0 =&gt; &#39;api&#39;, 1 =&gt; &#39;auth:api&#39;]; public
+                                    $compiled = class Symfony\\Component\\Routing\\CompiledRoute { private array
+                                    $variables = [...]; private array $tokens = [...]; private string $staticPrefix =
+                                    &#39;\/api\/forms\/store&#39;; private string $regex =
+                                    &#39;{^\/api\/forms\/store$}sDu&#39;; private array $pathVariables = [...]; private
+                                    array $hostVariables = [...]; private ?string $hostRegex = NULL; private array
+                                    $hostTokens = [...] }; protected $router = class Illuminate\\Routing\\Router {
+                                    protected $events = class Illuminate\\Events\\Dispatcher { ... }; protected
+                                    $container = class Illuminate\\Foundation\\Application { ... }; protected $routes =
+                                    class Illuminate\\Routing\\RouteCollection { ... }; protected $current = ...;
+                                    protected $currentRequest = class Illuminate\\Http\\Request { ... }; protected
+                                    $middleware = [...]; protected $middlewareGroups = [...]; public $middlewarePriority
+                                    = [...]; protected $binders = [...]; protected $patterns = [...]; protected
+                                    $groupStack = [...]; protected $implicitBindingCallback = NULL }; protected
+                                    $container = class Illuminate\\Foundation\\Application { protected $resolved =
+                                    [...]; protected $bindings = [...]; protected $methodBindings = [...]; protected
+                                    $instances = [...]; protected $scopedInstances = [...]; protected $aliases = [...];
+                                    protected $abstractAliases = [...]; protected $extenders = [...]; protected $tags =
+                                    [...]; protected $buildStack = [...]; protected $with = [...]; public $contextual =
+                                    [...]; protected $reboundCallbacks = [...]; protected
+                                    $globalBeforeResolvingCallbacks = [...]; protected $globalResolvingCallbacks =
+                                    [...]; protected $globalAfterResolvingCallbacks = [...]; protected
+                                    $beforeResolvingCallbacks = [...]; protected $resolvingCallbacks = [...]; protected
+                                    $afterResolvingCallbacks = [...]; protected $basePath =
+                                    &#39;C:\\\\wamp64\\\\www\\\\checker&#39;; protected $hasBeenBootstrapped = TRUE;
+                                    protected $booted = TRUE; protected $bootingCallbacks = [...]; protected
+                                    $bootedCallbacks = [...]; protected $terminatingCallbacks = [...]; protected
+                                    $serviceProviders = [...]; protected $loadedProviders = [...]; protected
+                                    $deferredServices = [...]; protected $bootstrapPath =
+                                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\bootstrap&#39;; protected $appPath = NULL;
+                                    protected $configPath = NULL; protected $databasePath = NULL; protected $langPath =
+                                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\lang&#39;; protected $publicPath = NULL;
+                                    protected $storagePath = NULL; protected $environmentPath = NULL; protected
+                                    $environmentFile = &#39;.env&#39;; protected $isRunningInConsole = FALSE; protected
+                                    $namespace = NULL; protected $absoluteCachePathPrefixes = [...] }; protected
+                                    $bindingFields = [] }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php'
+        bgcolor='#eeeeec'>...\\Router.php<b>:<\ /b>748<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>27<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1456<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2455576<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Router->runRouteWithinStack( <span>$route = <\ /span><span>class
+                    Illuminate\\Routing\\Route { public $uri = &#39;api\/forms\/store&#39;; public $methods = [0 =&gt;
+                    &#39;POST&#39;]; public $action = [&#39;middleware&#39; =&gt; [...], &#39;uses&#39; =&gt;
+                    &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;, &#39;controller&#39; =&gt;
+                    &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;, &#39;namespace&#39; =&gt; NULL,
+                    &#39;prefix&#39; =&gt; &#39;api\/forms&#39;, &#39;where&#39; =&gt; [...]]; public $isFallback =
+                    FALSE; public $controller = class App\\Http\\Controllers\\FormController { protected $middleware =
+                    [...] }; public $defaults = []; public $wheres = []; public $parameters = []; public $parameterNames
+                    = []; protected $originalParameters = []; protected $withTrashedBindings = FALSE; protected
+                    $lockSeconds = NULL; protected $waitSeconds = NULL; public $computedMiddleware = [0 =&gt;
+                    &#39;api&#39;, 1 =&gt; &#39;auth:api&#39;]; public $compiled = class
+                    Symfony\\Component\\Routing\\CompiledRoute { private array $variables = [...]; private array $tokens
+                    = [...]; private string $staticPrefix = &#39;\/api\/forms\/store&#39;; private string $regex =
+                    &#39;{^\/api\/forms\/store$}sDu&#39;; private array $pathVariables = [...]; private array
+                    $hostVariables = [...]; private ?string $hostRegex = NULL; private array $hostTokens = [...] };
+                    protected $router = class Illuminate\\Routing\\Router { protected $events = class
+                    Illuminate\\Events\\Dispatcher { ... }; protected $container = class
+                    Illuminate\\Foundation\\Application { ... }; protected $routes = class
+                    Illuminate\\Routing\\RouteCollection { ... }; protected $current = ...; protected $currentRequest =
+                    class Illuminate\\Http\\Request { ... }; protected $middleware = [...]; protected $middlewareGroups
+                    = [...]; public $middlewarePriority = [...]; protected $binders = [...]; protected $patterns =
+                    [...]; protected $groupStack = [...]; protected $implicitBindingCallback = NULL }; protected
+                    $container = class Illuminate\\Foundation\\Application { protected $resolved = [...]; protected
+                    $bindings = [...]; protected $methodBindings = [...]; protected $instances = [...]; protected
+                    $scopedInstances = [...]; protected $aliases = [...]; protected $abstractAliases = [...]; protected
+                    $extenders = [...]; protected $tags = [...]; protected $buildStack = [...]; protected $with = [...];
+                    public $contextual = [...]; protected $reboundCallbacks = [...]; protected
+                    $globalBeforeResolvingCallbacks = [...]; protected $globalResolvingCallbacks = [...]; protected
+                    $globalAfterResolvingCallbacks = [...]; protected $beforeResolvingCallbacks = [...]; protected
+                    $resolvingCallbacks = [...]; protected $afterResolvingCallbacks = [...]; protected $basePath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker&#39;; protected $hasBeenBootstrapped = TRUE; protected $booted =
+                    TRUE; protected $bootingCallbacks = [...]; protected $bootedCallbacks = [...]; protected
+                    $terminatingCallbacks = [...]; protected $serviceProviders = [...]; protected $loadedProviders =
+                    [...]; protected $deferredServices = [...]; protected $bootstrapPath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\bootstrap&#39;; protected $appPath = NULL; protected
+                    $configPath = NULL; protected $databasePath = NULL; protected $langPath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\lang&#39;; protected $publicPath = NULL; protected
+                    $storagePath = NULL; protected $environmentPath = NULL; protected $environmentFile = &#39;.env&#39;;
+                    protected $isRunningInConsole = FALSE; protected $namespace = NULL; protected
+                    $absoluteCachePathPrefixes = [...] }; protected $bindingFields = [] }<\ /span>, <span>$request = <\
+                                /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] };
+                                    public $request = class Symfony\\Component\\HttpFoundation\\InputBag { protected
+                                    $parameters = [...] }; public $query = class
+                                    Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected
+                                    $parameters = [...] }; public $files = class
+                                    Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...] };
+                                    public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected
+                                    $parameters = [...] }; public $headers = class
+                                    Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers = [...];
+                                    protected $cacheControl = [...] }; protected $content = NULL; protected $languages =
+                                    NULL; protected $charsets = NULL; protected $encodings = NULL; protected
+                                    $acceptableContentTypes = NULL; protected $pathInfo = &#39;\/api\/forms\/store&#39;;
+                                    protected $requestUri = &#39;\/api\/forms\/store&#39;; protected $baseUrl =
+                                    &#39;&#39;; protected $basePath = NULL; protected $method = &#39;POST&#39;;
+                                    protected $format = NULL; protected $session = NULL; protected $locale = NULL;
+                                    protected $defaultLocale = &#39;en&#39;; private ?string
+                                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred =
+                                    *uninitialized*; private array
+                                    ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json
+                                    = NULL; protected $convertedFiles = []; protected $userResolver = class Closure {
+                                    virtual $closure = &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected
+                                    $routeResolver = class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php'
+        bgcolor='#eeeeec'>...\\Router.php<b>:<\ /b>784<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>28<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1482<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2471896<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Pipeline\\Pipeline->then( <span>$destination = <\ /span><span>class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php'
+        bgcolor='#eeeeec'>...\\Router.php<b>:<\ /b>807<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>29<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1482<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2475544<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>116<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>30<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.1485<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2476072<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Auth\\Middleware\\Authenticate->handle( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span>, ...<span>$guards =
+                                            <\ /span><i>variadic<\ /i>(<span>&#39;api&#39;<\ /span>) )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>31<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2000<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2725032<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php'
+        bgcolor='#eeeeec'>...\\Authenticate.php<b>:<\ /b>57<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>32<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2003<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2725576<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Middleware\\ThrottleRequests->handle( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span>, <span>$maxAttempts
+                                            = <\ /span><span>&#39;api&#39;<\ /span>, <span>$decayMinutes = <\ /span>???,
+                                                                <span>$prefix = <\ /span>??? )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>33<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2003<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2725576<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequestUsingNamedLimiter(
+        <span>$request = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span>, <span>$limiterName
+                                            = <\ /span><span>&#39;api&#39;<\ /span>, <span>$limiter = <\ /span>
+                                                                <span>class Closure { virtual $closure =
+                                                                    &quot;$this-&gt;App\\Providers\\{closure}&quot; }<\
+                                                                        /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php'
+        bgcolor='#eeeeec'>...\\ThrottleRequests.php<b>:<\ /b>87<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>34<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2009<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2728880<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Middleware\\ThrottleRequests->handleRequest( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span>, <span>$limits = <\
+                                                /span><span>[0 =&gt; class stdClass { public $key =
+                                                    &#39;f1f70ec40aaa556905d4a030501c0ba4&#39;; public $maxAttempts =
+                                                    60; public $decayMinutes = 1; public $responseCallback = NULL }]<\
+                                                        /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php'
+        bgcolor='#eeeeec'>...\\ThrottleRequests.php<b>:<\ /b>135<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>35<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2058<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729272<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:156-187}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php'
+        bgcolor='#eeeeec'>...\\ThrottleRequests.php<b>:<\ /b>159<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>36<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2063<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729704<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Middleware\\SubstituteBindings->handle( <span>$request = <\ /span>
+                <span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span>, <span>$next =
+                            <\ /span><span>class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Pipeline\\{closure}&quot; }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>180<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>37<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2069<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729704<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php:139-145}(
+        <span>$passable = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php'
+        bgcolor='#eeeeec'>...\\SubstituteBindings.php<b>:<\ /b>50<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>38<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2070<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729704<\ /td>
+    <td bgcolor='#eeeeec'>
+        Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure:C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php:805-807}(
+        <span>$request = <\ /span><span>class Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php'
+        bgcolor='#eeeeec'>...\\Pipeline.php<b>:<\ /b>141<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>39<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2070<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729704<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Route->run( )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php'
+        bgcolor='#eeeeec'>...\\Router.php<b>:<\ /b>806<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>40<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2070<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729704<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Route->runController( )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php'
+        bgcolor='#eeeeec'>...\\Route.php<b>:<\ /b>205<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>41<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2071<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2729736<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\ControllerDispatcher->dispatch( <span>$route = <\ /span><span>class
+                    Illuminate\\Routing\\Route { public $uri = &#39;api\/forms\/store&#39;; public $methods = [0 =&gt;
+                    &#39;POST&#39;]; public $action = [&#39;middleware&#39; =&gt; [...], &#39;uses&#39; =&gt;
+                    &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;, &#39;controller&#39; =&gt;
+                    &#39;App\\\\Http\\\\Controllers\\\\FormController@store&#39;, &#39;namespace&#39; =&gt; NULL,
+                    &#39;prefix&#39; =&gt; &#39;api\/forms&#39;, &#39;where&#39; =&gt; [...]]; public $isFallback =
+                    FALSE; public $controller = class App\\Http\\Controllers\\FormController { protected $middleware =
+                    [...] }; public $defaults = []; public $wheres = []; public $parameters = []; public $parameterNames
+                    = []; protected $originalParameters = []; protected $withTrashedBindings = FALSE; protected
+                    $lockSeconds = NULL; protected $waitSeconds = NULL; public $computedMiddleware = [0 =&gt;
+                    &#39;api&#39;, 1 =&gt; &#39;auth:api&#39;]; public $compiled = class
+                    Symfony\\Component\\Routing\\CompiledRoute { private array $variables = [...]; private array $tokens
+                    = [...]; private string $staticPrefix = &#39;\/api\/forms\/store&#39;; private string $regex =
+                    &#39;{^\/api\/forms\/store$}sDu&#39;; private array $pathVariables = [...]; private array
+                    $hostVariables = [...]; private ?string $hostRegex = NULL; private array $hostTokens = [...] };
+                    protected $router = class Illuminate\\Routing\\Router { protected $events = class
+                    Illuminate\\Events\\Dispatcher { ... }; protected $container = class
+                    Illuminate\\Foundation\\Application { ... }; protected $routes = class
+                    Illuminate\\Routing\\RouteCollection { ... }; protected $current = ...; protected $currentRequest =
+                    class Illuminate\\Http\\Request { ... }; protected $middleware = [...]; protected $middlewareGroups
+                    = [...]; public $middlewarePriority = [...]; protected $binders = [...]; protected $patterns =
+                    [...]; protected $groupStack = [...]; protected $implicitBindingCallback = NULL }; protected
+                    $container = class Illuminate\\Foundation\\Application { protected $resolved = [...]; protected
+                    $bindings = [...]; protected $methodBindings = [...]; protected $instances = [...]; protected
+                    $scopedInstances = [...]; protected $aliases = [...]; protected $abstractAliases = [...]; protected
+                    $extenders = [...]; protected $tags = [...]; protected $buildStack = [...]; protected $with = [...];
+                    public $contextual = [...]; protected $reboundCallbacks = [...]; protected
+                    $globalBeforeResolvingCallbacks = [...]; protected $globalResolvingCallbacks = [...]; protected
+                    $globalAfterResolvingCallbacks = [...]; protected $beforeResolvingCallbacks = [...]; protected
+                    $resolvingCallbacks = [...]; protected $afterResolvingCallbacks = [...]; protected $basePath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker&#39;; protected $hasBeenBootstrapped = TRUE; protected $booted =
+                    TRUE; protected $bootingCallbacks = [...]; protected $bootedCallbacks = [...]; protected
+                    $terminatingCallbacks = [...]; protected $serviceProviders = [...]; protected $loadedProviders =
+                    [...]; protected $deferredServices = [...]; protected $bootstrapPath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\bootstrap&#39;; protected $appPath = NULL; protected
+                    $configPath = NULL; protected $databasePath = NULL; protected $langPath =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\lang&#39;; protected $publicPath = NULL; protected
+                    $storagePath = NULL; protected $environmentPath = NULL; protected $environmentFile = &#39;.env&#39;;
+                    protected $isRunningInConsole = FALSE; protected $namespace = NULL; protected
+                    $absoluteCachePathPrefixes = [...] }; protected $bindingFields = [] }<\ /span>, <span>$controller =
+                            <\ /span><span>class App\\Http\\Controllers\\FormController { protected $middleware = [0
+                                    =&gt; [...]] }<\ /span>, <span>$method = <\ /span><span>&#39;store&#39;<\ /span> )<\
+                                                            /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php'
+        bgcolor='#eeeeec'>...\\Route.php<b>:<\ /b>260<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>42<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2073<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2730112<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Routing\\Controller->callAction( <span>$method = <\ /span><span>&#39;store&#39;<\
+                        /span>, <span>$parameters = <\ /span><span>[0 =&gt; class Illuminate\\Http\\Request { public
+                                    $attributes = class Symfony\\Component\\HttpFoundation\\ParameterBag { ... }; public
+                                    $request = class Symfony\\Component\\HttpFoundation\\InputBag { ... }; public $query
+                                    = class Symfony\\Component\\HttpFoundation\\InputBag { ... }; public $server = class
+                                    Symfony\\Component\\HttpFoundation\\ServerBag { ... }; public $files = class
+                                    Symfony\\Component\\HttpFoundation\\FileBag { ... }; public $cookies = class
+                                    Symfony\\Component\\HttpFoundation\\InputBag { ... }; public $headers = class
+                                    Symfony\\Component\\HttpFoundation\\HeaderBag { ... }; protected $content = NULL;
+                                    protected $languages = NULL; protected $charsets = NULL; protected $encodings =
+                                    NULL; protected $acceptableContentTypes = NULL; protected $pathInfo =
+                                    &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath
+                                    = NULL; protected $method = &#39;POST&#39;; protected $format = NULL; protected
+                                    $session = NULL; protected $locale = NULL; protected $defaultLocale = &#39;en&#39;;
+                                    private ?string ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat =
+                                    NULL; private bool ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE;
+                                    private bool ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE;
+                                    private bool ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred =
+                                    *uninitialized*; private array
+                                    ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = [...]; private
+                                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json
+                                    = NULL; protected $convertedFiles = [...]; protected $userResolver = class Closure {
+                                    virtual $closure = &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot;, ... };
+                                    protected $routeResolver = class Closure { virtual $closure =
+                                    &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot;, ... } }]<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php'
+        bgcolor='#eeeeec'>...\\ControllerDispatcher.php<b>:<\ /b>43<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>43<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2073<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2730112<\ /td>
+    <td bgcolor='#eeeeec'>App\\Http\\Controllers\\FormController->store( <span>$request = <\ /span><span>class
+                    Illuminate\\Http\\Request { public $attributes = class
+                    Symfony\\Component\\HttpFoundation\\ParameterBag { protected $parameters = [...] }; public $request
+                    = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] }; public
+                    $query = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters = [...] };
+                    public $server = class Symfony\\Component\\HttpFoundation\\ServerBag { protected $parameters = [...]
+                    }; public $files = class Symfony\\Component\\HttpFoundation\\FileBag { protected $parameters = [...]
+                    }; public $cookies = class Symfony\\Component\\HttpFoundation\\InputBag { protected $parameters =
+                    [...] }; public $headers = class Symfony\\Component\\HttpFoundation\\HeaderBag { protected $headers
+                    = [...]; protected $cacheControl = [...] }; protected $content = NULL; protected $languages = NULL;
+                    protected $charsets = NULL; protected $encodings = NULL; protected $acceptableContentTypes = NULL;
+                    protected $pathInfo = &#39;\/api\/forms\/store&#39;; protected $requestUri =
+                    &#39;\/api\/forms\/store&#39;; protected $baseUrl = &#39;&#39;; protected $basePath = NULL;
+                    protected $method = &#39;POST&#39;; protected $format = NULL; protected $session = NULL; protected
+                    $locale = NULL; protected $defaultLocale = &#39;en&#39;; private ?string
+                    ${Symfony\\Component\\HttpFoundation\\Request}preferredFormat = NULL; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isHostValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isForwardedValid = TRUE; private bool
+                    ${Symfony\\Component\\HttpFoundation\\Request}isSafeContentPreferred = *uninitialized*; private
+                    array ${Symfony\\Component\\HttpFoundation\\Request}trustedValuesCache = []; private
+                    ${Symfony\\Component\\HttpFoundation\\Request}isIisRewrite = FALSE; protected $json = NULL;
+                    protected $convertedFiles = []; protected $userResolver = class Closure { virtual $closure =
+                    &quot;$this-&gt;Illuminate\\Auth\\{closure}&quot; }; protected $routeResolver = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Routing\\{closure}&quot; } }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php'
+        bgcolor='#eeeeec'>...\\Controller.php<b>:<\ /b>54<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>44<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2126<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2765008<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Eloquent\\Model->save( <span>$options = <\ /span>??? )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\app\\Http\\Controllers\\FormController.php' bgcolor='#eeeeec'>
+        ...\\FormController.php<b>:<\ /b>58<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>45<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2130<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2766224<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Eloquent\\Model->performInsert( <span>$query = <\ /span><span>class
+                    Illuminate\\Database\\Eloquent\\Builder { protected $query = class
+                    Illuminate\\Database\\Query\\Builder { public $connection = class
+                    Illuminate\\Database\\MySqlConnection { ... }; public $grammar = class
+                    Illuminate\\Database\\Query\\Grammars\\MySqlGrammar { ... }; public $processor = class
+                    Illuminate\\Database\\Query\\Processors\\MySqlProcessor { ... }; public $bindings = [...]; public
+                    $aggregate = NULL; public $columns = NULL; public $distinct = FALSE; public $from = &#39;forms&#39;;
+                    public $indexHint = NULL; public $joins = NULL; public $wheres = [...]; public $groups = NULL;
+                    public $havings = NULL; public $orders = NULL; public $limit = NULL; public $offset = NULL; public
+                    $unions = NULL; public $unionLimit = NULL; public $unionOffset = NULL; public $unionOrders = NULL;
+                    public $lock = NULL; public $beforeQueryCallbacks = [...]; public $operators = [...]; public
+                    $bitwiseOperators = [...]; public $useWritePdo = FALSE }; protected $model = class App\\Models\\Form
+                    { protected $connection = NULL; protected $table = NULL; protected $primaryKey = &#39;id&#39;;
+                    protected $keyType = &#39;int&#39;; public $incrementing = TRUE; protected $with = [...]; protected
+                    $withCount = [...]; public $preventsLazyLoading = FALSE; protected $perPage = 15; public $exists =
+                    FALSE; public $wasRecentlyCreated = FALSE; protected $escapeWhenCastingToString = FALSE; protected
+                    $attributes = [...]; protected $original = [...]; protected $changes = [...]; protected $casts =
+                    [...]; protected $classCastCache = [...]; protected $attributeCastCache = [...]; protected
+                    $dateFormat = NULL; protected $appends = [...]; protected $dispatchesEvents = [...]; protected
+                    $observables = [...]; protected $relations = [...]; protected $touches = [...]; public $timestamps =
+                    TRUE; public $usesUniqueIds = FALSE; protected $hidden = [...]; protected $visible = [...];
+                    protected $fillable = [...]; protected $guarded = [...] }; protected $eagerLoad = []; protected
+                    $localMacros = []; protected $onDelete = NULL; protected $propertyPassthru = [0 =&gt;
+                    &#39;from&#39;]; protected $passthru = [0 =&gt; &#39;aggregate&#39;, 1 =&gt; &#39;average&#39;, 2
+                    =&gt; &#39;avg&#39;, 3 =&gt; &#39;count&#39;, 4 =&gt; &#39;dd&#39;, 5 =&gt; &#39;ddrawsql&#39;, 6
+                    =&gt; &#39;doesntexist&#39;, 7 =&gt; &#39;doesntexistor&#39;, 8 =&gt; &#39;dump&#39;, 9 =&gt;
+                    &#39;dumprawsql&#39;, 10 =&gt; &#39;exists&#39;, 11 =&gt; &#39;existsor&#39;, 12 =&gt;
+                    &#39;explain&#39;, 13 =&gt; &#39;getbindings&#39;, 14 =&gt; &#39;getconnection&#39;, 15 =&gt;
+                    &#39;getgrammar&#39;, 16 =&gt; &#39;implode&#39;, 17 =&gt; &#39;insert&#39;, 18 =&gt;
+                    &#39;insertgetid&#39;, 19 =&gt; &#39;insertorignore&#39;, 20 =&gt; &#39;insertusing&#39;, 21 =&gt;
+                    &#39;max&#39;, 22 =&gt; &#39;min&#39;, 23 =&gt; &#39;raw&#39;, 24 =&gt; &#39;rawvalue&#39;, 25 =&gt;
+                    &#39;sum&#39;, 26 =&gt; &#39;tosql&#39;, 27 =&gt; &#39;torawsql&#39;]; protected $scopes = [];
+                    protected $removedScopes = [] }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php'
+        bgcolor='#eeeeec'>...\\Model.php<b>:<\ /b>1137<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>46<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2140<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2767280<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Eloquent\\Model->insertAndSetId( <span>$query = <\ /span><span>class
+                    Illuminate\\Database\\Eloquent\\Builder { protected $query = class
+                    Illuminate\\Database\\Query\\Builder { public $connection = class
+                    Illuminate\\Database\\MySqlConnection { ... }; public $grammar = class
+                    Illuminate\\Database\\Query\\Grammars\\MySqlGrammar { ... }; public $processor = class
+                    Illuminate\\Database\\Query\\Processors\\MySqlProcessor { ... }; public $bindings = [...]; public
+                    $aggregate = NULL; public $columns = NULL; public $distinct = FALSE; public $from = &#39;forms&#39;;
+                    public $indexHint = NULL; public $joins = NULL; public $wheres = [...]; public $groups = NULL;
+                    public $havings = NULL; public $orders = NULL; public $limit = NULL; public $offset = NULL; public
+                    $unions = NULL; public $unionLimit = NULL; public $unionOffset = NULL; public $unionOrders = NULL;
+                    public $lock = NULL; public $beforeQueryCallbacks = [...]; public $operators = [...]; public
+                    $bitwiseOperators = [...]; public $useWritePdo = FALSE }; protected $model = class App\\Models\\Form
+                    { protected $connection = NULL; protected $table = NULL; protected $primaryKey = &#39;id&#39;;
+                    protected $keyType = &#39;int&#39;; public $incrementing = TRUE; protected $with = [...]; protected
+                    $withCount = [...]; public $preventsLazyLoading = FALSE; protected $perPage = 15; public $exists =
+                    FALSE; public $wasRecentlyCreated = FALSE; protected $escapeWhenCastingToString = FALSE; protected
+                    $attributes = [...]; protected $original = [...]; protected $changes = [...]; protected $casts =
+                    [...]; protected $classCastCache = [...]; protected $attributeCastCache = [...]; protected
+                    $dateFormat = NULL; protected $appends = [...]; protected $dispatchesEvents = [...]; protected
+                    $observables = [...]; protected $relations = [...]; protected $touches = [...]; public $timestamps =
+                    TRUE; public $usesUniqueIds = FALSE; protected $hidden = [...]; protected $visible = [...];
+                    protected $fillable = [...]; protected $guarded = [...] }; protected $eagerLoad = []; protected
+                    $localMacros = []; protected $onDelete = NULL; protected $propertyPassthru = [0 =&gt;
+                    &#39;from&#39;]; protected $passthru = [0 =&gt; &#39;aggregate&#39;, 1 =&gt; &#39;average&#39;, 2
+                    =&gt; &#39;avg&#39;, 3 =&gt; &#39;count&#39;, 4 =&gt; &#39;dd&#39;, 5 =&gt; &#39;ddrawsql&#39;, 6
+                    =&gt; &#39;doesntexist&#39;, 7 =&gt; &#39;doesntexistor&#39;, 8 =&gt; &#39;dump&#39;, 9 =&gt;
+                    &#39;dumprawsql&#39;, 10 =&gt; &#39;exists&#39;, 11 =&gt; &#39;existsor&#39;, 12 =&gt;
+                    &#39;explain&#39;, 13 =&gt; &#39;getbindings&#39;, 14 =&gt; &#39;getconnection&#39;, 15 =&gt;
+                    &#39;getgrammar&#39;, 16 =&gt; &#39;implode&#39;, 17 =&gt; &#39;insert&#39;, 18 =&gt;
+                    &#39;insertgetid&#39;, 19 =&gt; &#39;insertorignore&#39;, 20 =&gt; &#39;insertusing&#39;, 21 =&gt;
+                    &#39;max&#39;, 22 =&gt; &#39;min&#39;, 23 =&gt; &#39;raw&#39;, 24 =&gt; &#39;rawvalue&#39;, 25 =&gt;
+                    &#39;sum&#39;, 26 =&gt; &#39;tosql&#39;, 27 =&gt; &#39;torawsql&#39;]; protected $scopes = [];
+                    protected $removedScopes = [] }<\ /span>, <span>$attributes = <\ /span><span>[&#39;title&#39; =&gt;
+                                    &#39;Falling down the trip&#39;, &#39;description&#39; =&gt; &#39;He fell down the
+                                    trip and slip to the floor&#39;, &#39;user_id&#39; =&gt; 1, &#39;step_id&#39; =&gt;
+                                    &#39;1&#39;, &#39;category_id&#39; =&gt; [0 =&gt; &#39;1&#39;], &#39;updated_at&#39;
+                                    =&gt; &#39;2024-01-04 11:05:05&#39;, &#39;created_at&#39; =&gt; &#39;2024-01-04
+                                    11:05:05&#39;]<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php'
+        bgcolor='#eeeeec'>...\\Model.php<b>:<\ /b>1298<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>47<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2140<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2767280<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Eloquent\\Builder->insertGetId( <span>[&#39;title&#39; =&gt;
+            &#39;Falling down the trip&#39;, &#39;description&#39; =&gt; &#39;He fell down the trip and slip to the
+            floor&#39;, &#39;user_id&#39; =&gt; 1, &#39;step_id&#39; =&gt; &#39;1&#39;, &#39;category_id&#39; =&gt; [0
+            =&gt; &#39;1&#39;], &#39;updated_at&#39; =&gt; &#39;2024-01-04 11:05:05&#39;, &#39;created_at&#39; =&gt;
+            &#39;2024-01-04 11:05:05&#39;]<\ /span>, <span>&#39;id&#39;<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php'
+        bgcolor='#eeeeec'>...\\Model.php<b>:<\ /b>1333<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>48<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2140<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2767656<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Eloquent\\Builder->__call( <span>$method = <\ /span>
+                <span>&#39;insertGetId&#39;<\ /span>, <span>$parameters = <\ /span><span>[0 =&gt; [&#39;title&#39; =&gt;
+                                    &#39;Falling down the trip&#39;, &#39;description&#39; =&gt; &#39;He fell down the
+                                    trip and slip to the floor&#39;, &#39;user_id&#39; =&gt; 1, &#39;step_id&#39; =&gt;
+                                    &#39;1&#39;, &#39;category_id&#39; =&gt; [...], &#39;updated_at&#39; =&gt;
+                                    &#39;2024-01-04 11:05:05&#39;, &#39;created_at&#39; =&gt; &#39;2024-01-04
+                                    11:05:05&#39;], 1 =&gt; &#39;id&#39;]<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Model.php'
+        bgcolor='#eeeeec'>...\\Model.php<b>:<\ /b>1333<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>49<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2140<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2767656<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Query\\Builder->insertGetId( <span>$values = <\ /span>
+                <span>[&#39;title&#39; =&gt; &#39;Falling down the trip&#39;, &#39;description&#39; =&gt; &#39;He fell
+                    down the trip and slip to the floor&#39;, &#39;user_id&#39; =&gt; 1, &#39;step_id&#39; =&gt;
+                    &#39;1&#39;, &#39;category_id&#39; =&gt; [0 =&gt; &#39;1&#39;], &#39;updated_at&#39; =&gt;
+                    &#39;2024-01-04 11:05:05&#39;, &#39;created_at&#39; =&gt; &#39;2024-01-04 11:05:05&#39;]<\ /span>,
+                        <span>$sequence = <\ /span><span>&#39;id&#39;<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Builder.php'
+        bgcolor='#eeeeec'>...\\Builder.php<b>:<\ /b>1968<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>50<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2147<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2768224<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Query\\Processors\\Processor->processInsertGetId( <span>$query = <\
+                /span><span>class Illuminate\\Database\\Query\\Builder { public $connection = class
+                    Illuminate\\Database\\MySqlConnection { protected $pdo = class PDO { ... }; protected $readPdo =
+                    NULL; protected $database = &#39;checker&#39;; protected $readWriteType = NULL; protected
+                    $tablePrefix = &#39;&#39;; protected $config = [...]; protected $reconnector = class Closure {
+                    virtual $closure = &quot;$this-&gt;Illuminate\\Database\\{closure}&quot;, ... }; protected
+                    $queryGrammar = class Illuminate\\Database\\Query\\Grammars\\MySqlGrammar { ... }; protected
+                    $schemaGrammar = class Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar { ... }; protected
+                    $postProcessor = class Illuminate\\Database\\Query\\Processors\\MySqlProcessor { ... }; protected
+                    $events = class Illuminate\\Events\\Dispatcher { ... }; protected $fetchMode = 5; protected
+                    $transactions = 0; protected $transactionsManager = class
+                    Illuminate\\Database\\DatabaseTransactionsManager { ... }; protected $recordsModified = FALSE;
+                    protected $readOnWriteConnection = FALSE; protected $queryLog = [...]; protected $loggingQueries =
+                    FALSE; protected $totalQueryDuration = 21.96; protected $queryDurationHandlers = [...]; protected
+                    $pretending = FALSE; protected $beforeExecutingCallbacks = [...]; protected $doctrineConnection =
+                    NULL; protected $doctrineTypeMappings = [...] }; public $grammar = class
+                    Illuminate\\Database\\Query\\Grammars\\MySqlGrammar { protected $connection = class
+                    Illuminate\\Database\\MySqlConnection { ... }; protected $tablePrefix = &#39;&#39;; protected
+                    $operators = [...]; protected $bitwiseOperators = [...]; protected $selectComponents = [...] };
+                    public $processor = class Illuminate\\Database\\Query\\Processors\\MySqlProcessor { }; public
+                    $bindings = [&#39;select&#39; =&gt; [...], &#39;from&#39; =&gt; [...], &#39;join&#39; =&gt; [...],
+                    &#39;where&#39; =&gt; [...], &#39;groupBy&#39; =&gt; [...], &#39;having&#39; =&gt; [...],
+                    &#39;order&#39; =&gt; [...], &#39;union&#39; =&gt; [...], &#39;unionOrder&#39; =&gt; [...]]; public
+                    $aggregate = NULL; public $columns = NULL; public $distinct = FALSE; public $from = &#39;forms&#39;;
+                    public $indexHint = NULL; public $joins = NULL; public $wheres = []; public $groups = NULL; public
+                    $havings = NULL; public $orders = NULL; public $limit = NULL; public $offset = NULL; public $unions
+                    = NULL; public $unionLimit = NULL; public $unionOffset = NULL; public $unionOrders = NULL; public
+                    $lock = NULL; public $beforeQueryCallbacks = []; public $operators = [0 =&gt; &#39;=&#39;, 1 =&gt;
+                    &#39;&lt;&#39;, 2 =&gt; &#39;&gt;&#39;, 3 =&gt; &#39;&lt;=&#39;, 4 =&gt; &#39;&gt;=&#39;, 5 =&gt;
+                    &#39;&lt;&gt;&#39;, 6 =&gt; &#39;!=&#39;, 7 =&gt; &#39;&lt;=&gt;&#39;, 8 =&gt; &#39;like&#39;, 9
+                    =&gt; &#39;like binary&#39;, 10 =&gt; &#39;not like&#39;, 11 =&gt; &#39;ilike&#39;, 12 =&gt;
+                    &#39;&amp;&#39;, 13 =&gt; &#39;|&#39;, 14 =&gt; &#39;^&#39;, 15 =&gt; &#39;&lt;&lt;&#39;, 16 =&gt;
+                    &#39;&gt;&gt;&#39;, 17 =&gt; &#39;&amp;~&#39;, 18 =&gt; &#39;is&#39;, 19 =&gt; &#39;is not&#39;, 20
+                    =&gt; &#39;rlike&#39;, 21 =&gt; &#39;not rlike&#39;, 22 =&gt; &#39;regexp&#39;, 23 =&gt; &#39;not
+                    regexp&#39;, 24 =&gt; &#39;~&#39;, 25 =&gt; &#39;~*&#39;, 26 =&gt; &#39;!~&#39;, 27 =&gt;
+                    &#39;!~*&#39;, 28 =&gt; &#39;similar to&#39;, 29 =&gt; &#39;not similar to&#39;, 30 =&gt; &#39;not
+                    ilike&#39;, 31 =&gt; &#39;~~*&#39;, 32 =&gt; &#39;!~~*&#39;]; public $bitwiseOperators = [0 =&gt;
+                    &#39;&amp;&#39;, 1 =&gt; &#39;|&#39;, 2 =&gt; &#39;^&#39;, 3 =&gt; &#39;&lt;&lt;&#39;, 4 =&gt;
+                    &#39;&gt;&gt;&#39;, 5 =&gt; &#39;&amp;~&#39;]; public $useWritePdo = FALSE }<\ /span>, <span>$sql =
+                            <\ /span><span>&#39;insert into `forms` (`title`, `description`, `user_id`, `step_id`,
+                                    `category_id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)&#39;<\
+                                        /span>, <span>$values = <\ /span><span>[0 =&gt; &#39;Falling down the trip&#39;,
+                                                    1 =&gt; &#39;He fell down the trip and slip to the floor&#39;, 2
+                                                    =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt; &#39;1&#39;], 5 =&gt;
+                                                    &#39;2024-01-04 11:05:05&#39;, 6 =&gt; &#39;2024-01-04
+                                                    11:05:05&#39;]<\ /span>, <span>$sequence = <\ /span>
+                                                                <span>&#39;id&#39;<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Builder.php'
+        bgcolor='#eeeeec'>...\\Builder.php<b>:<\ /b>3387<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>51<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2147<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2768224<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Connection->insert( <span>$query = <\ /span><span>&#39;insert into
+                    `forms` (`title`, `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`)
+                    values (?, ?, ?, ?, ?, ?, ?)&#39;<\ /span>, <span>$bindings = <\ /span><span>[0 =&gt; &#39;Falling
+                                    down the trip&#39;, 1 =&gt; &#39;He fell down the trip and slip to the floor&#39;, 2
+                                    =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt; &#39;1&#39;], 5 =&gt; &#39;2024-01-04
+                                    11:05:05&#39;, 6 =&gt; &#39;2024-01-04 11:05:05&#39;]<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Query\\Processors\\Processor.php'
+        bgcolor='#eeeeec'>...\\Processor.php<b>:<\ /b>32<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>52<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2147<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2768224<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Connection->statement( <span>$query = <\ /span><span>&#39;insert into
+                    `forms` (`title`, `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`)
+                    values (?, ?, ?, ?, ?, ?, ?)&#39;<\ /span>, <span>$bindings = <\ /span><span>[0 =&gt; &#39;Falling
+                                    down the trip&#39;, 1 =&gt; &#39;He fell down the trip and slip to the floor&#39;, 2
+                                    =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt; &#39;1&#39;], 5 =&gt; &#39;2024-01-04
+                                    11:05:05&#39;, 6 =&gt; &#39;2024-01-04 11:05:05&#39;]<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php'
+        bgcolor='#eeeeec'>...\\Connection.php<b>:<\ /b>533<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>53<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2147<\ /td>
+    <td bgcolor='#eeeeec' align='right'>2768736<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Connection->run( <span>$query = <\ /span><span>&#39;insert into `forms`
+                    (`title`, `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`) values (?,
+                    ?, ?, ?, ?, ?, ?)&#39;<\ /span>, <span>$bindings = <\ /span><span>[0 =&gt; &#39;Falling down the
+                                    trip&#39;, 1 =&gt; &#39;He fell down the trip and slip to the floor&#39;, 2 =&gt; 1,
+                                    3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt; &#39;1&#39;], 5 =&gt; &#39;2024-01-04
+                                    11:05:05&#39;, 6 =&gt; &#39;2024-01-04 11:05:05&#39;]<\ /span>, <span>$callback = <\
+                                                /span><span>class Closure { virtual $closure =
+                                                    &quot;$this-&gt;Illuminate\\Database\\{closure}&quot; }<\ /span> )<\
+                                                            /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php'
+        bgcolor='#eeeeec'>...\\Connection.php<b>:<\ /b>581<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>54<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2278<\ /td>
+    <td bgcolor='#eeeeec' align='right'>3133000<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Connection->handleQueryException( <span>$e = <\ /span><span>class
+                    Illuminate\\Database\\QueryException { protected $message = &#39;Array to string conversion
+                    (Connection: mysql, SQL: insert into `forms` (`title`, `description`, `user_id`, `step_id`,
+                    `category_id`, `updated_at`, `created_at`) values (Falling down the trip, He fell down the trip and
+                    slip to the floor, 1, 1, ?, 2024-01-04 11:05:05, 2024-01-04 11:05:05))&#39;; private string
+                    ${Exception}string = &#39;&#39;; protected $code = 0; protected string $file =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php&#39;;
+                    protected int $line = 822; private array ${Exception}trace = [0 =&gt; [...], 1 =&gt; [...], 2 =&gt;
+                    [...], 3 =&gt; [...], 4 =&gt; [...], 5 =&gt; [...], 6 =&gt; [...], 7 =&gt; [...], 8 =&gt; [...], 9
+                    =&gt; [...], 10 =&gt; [...], 11 =&gt; [...], 12 =&gt; [...], 13 =&gt; [...], 14 =&gt; [...], 15
+                    =&gt; [...], 16 =&gt; [...], 17 =&gt; [...], 18 =&gt; [...], 19 =&gt; [...], 20 =&gt; [...], 21
+                    =&gt; [...], 22 =&gt; [...], 23 =&gt; [...], 24 =&gt; [...], 25 =&gt; [...], 26 =&gt; [...], 27
+                    =&gt; [...], 28 =&gt; [...], 29 =&gt; [...], 30 =&gt; [...], 31 =&gt; [...], 32 =&gt; [...], 33
+                    =&gt; [...], 34 =&gt; [...], 35 =&gt; [...], 36 =&gt; [...], 37 =&gt; [...], 38 =&gt; [...], 39
+                    =&gt; [...], 40 =&gt; [...], 41 =&gt; [...], 42 =&gt; [...], 43 =&gt; [...], 44 =&gt; [...], 45
+                    =&gt; [...], 46 =&gt; [...], 47 =&gt; [...], 48 =&gt; [...], 49 =&gt; [...], 50 =&gt; [...], 51
+                    =&gt; [...]]; private ?Throwable ${Exception}previous = class ErrorException { protected $message =
+                    &#39;Array to string conversion&#39;; private string ${Exception}string = &#39;&#39;; protected
+                    $code = 0; protected string $file =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php&#39;;
+                    protected int $line = 722; private array ${Exception}trace = [...]; private ?Throwable
+                    ${Exception}previous = NULL; protected int $severity = 2; public $xdebug_message =
+                    &#39;&lt;tr&gt;&lt;th align=\\&#39;left\\&#39; bgcolor=\\&#39;#f57900\\&#39;
+                    colspan=&quot;5&quot;&gt;&lt;span style=\\&#39;background-color: #cc0000; color: #fce94f; font-size:
+                    x-large;\\&#39;&gt;( ! )&lt;\/span&gt; ErrorException: Array to string conversion in
+                    C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php
+                    on line &lt;i&gt;722&lt;\/i&gt;&lt;\/th&gt;&lt;\/tr&gt;\\n&lt;tr&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#e9b96e\\&#39; colspan=\\&#39;5\\&#39;&gt;Call
+                    Stack&lt;\/th&gt;&lt;\/tr&gt;\\n&lt;tr&gt;&lt;th align=\\&#39;center\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;#&lt;\/th&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;Time&lt;\/th&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;Memory&lt;\/th&gt;&lt;&#39;... }; public ?array $errorInfo = NULL;
+                    public $connectionName = &#39;mysql&#39;; protected $sql = &#39;insert into `forms` (`title`,
+                    `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`) values (?, ?, ?, ?,
+                    ?, ?, ?)&#39;; protected $bindings = [0 =&gt; &#39;Falling down the trip&#39;, 1 =&gt; &#39;He fell
+                    down the trip and slip to the floor&#39;, 2 =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [...], 5 =&gt;
+                    &#39;2024-01-04 11:05:05&#39;, 6 =&gt; &#39;2024-01-04 11:05:05&#39;]; public $xdebug_message =
+                    &#39;&lt;tr&gt;&lt;th align=\\&#39;left\\&#39; bgcolor=\\&#39;#f57900\\&#39;
+                    colspan=&quot;5&quot;&gt;&lt;span style=\\&#39;background-color: #cc0000; color: #fce94f; font-size:
+                    x-large;\\&#39;&gt;( ! )&lt;\/span&gt; Illuminate\\\\Database\\\\QueryException: Array to string
+                    conversion (Connection: mysql, SQL: insert into `forms` (`title`, `description`, `user_id`,
+                    `step_id`, `category_id`, `updated_at`, `created_at`) values (Falling down the trip, He fell down
+                    the trip and slip to the floor, 1, 1, ?, 2024-01-04 11:05:05, 2024-01-04 11:05:05)) in
+                    C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\frame&#39;... }<\ /span>, <span>$query = <\
+                                /span><span>&#39;insert into `forms` (`title`, `description`, `user_id`, `step_id`,
+                                    `category_id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)&#39;<\
+                                        /span>, <span>$bindings = <\ /span><span>[0 =&gt; &#39;Falling down the
+                                                    trip&#39;, 1 =&gt; &#39;He fell down the trip and slip to the
+                                                    floor&#39;, 2 =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt;
+                                                    &#39;1&#39;], 5 =&gt; &#39;2024-01-04 11:05:05&#39;, 6 =&gt;
+                                                    &#39;2024-01-04 11:05:05&#39;]<\ /span>, <span>$callback = <\ /span>
+                                                                <span>class Closure { virtual $closure =
+                                                                    &quot;$this-&gt;Illuminate\\Database\\{closure}&quot;
+                                                                    }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php'
+        bgcolor='#eeeeec'>...\\Connection.php<b>:<\ /b>779<\ /td>
+                    <\ /tr>\n
+<tr>
+    <td bgcolor='#eeeeec' align='center'>55<\ /td>
+    <td bgcolor='#eeeeec' align='center'>0.2278<\ /td>
+    <td bgcolor='#eeeeec' align='right'>3133000<\ /td>
+    <td bgcolor='#eeeeec'>Illuminate\\Database\\Connection->tryAgainIfCausedByLostConnection( <span>$e = <\ /span>
+                <span>class Illuminate\\Database\\QueryException { protected $message = &#39;Array to string conversion
+                    (Connection: mysql, SQL: insert into `forms` (`title`, `description`, `user_id`, `step_id`,
+                    `category_id`, `updated_at`, `created_at`) values (Falling down the trip, He fell down the trip and
+                    slip to the floor, 1, 1, ?, 2024-01-04 11:05:05, 2024-01-04 11:05:05))&#39;; private string
+                    ${Exception}string = &#39;&#39;; protected $code = 0; protected string $file =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php&#39;;
+                    protected int $line = 822; private array ${Exception}trace = [0 =&gt; [...], 1 =&gt; [...], 2 =&gt;
+                    [...], 3 =&gt; [...], 4 =&gt; [...], 5 =&gt; [...], 6 =&gt; [...], 7 =&gt; [...], 8 =&gt; [...], 9
+                    =&gt; [...], 10 =&gt; [...], 11 =&gt; [...], 12 =&gt; [...], 13 =&gt; [...], 14 =&gt; [...], 15
+                    =&gt; [...], 16 =&gt; [...], 17 =&gt; [...], 18 =&gt; [...], 19 =&gt; [...], 20 =&gt; [...], 21
+                    =&gt; [...], 22 =&gt; [...], 23 =&gt; [...], 24 =&gt; [...], 25 =&gt; [...], 26 =&gt; [...], 27
+                    =&gt; [...], 28 =&gt; [...], 29 =&gt; [...], 30 =&gt; [...], 31 =&gt; [...], 32 =&gt; [...], 33
+                    =&gt; [...], 34 =&gt; [...], 35 =&gt; [...], 36 =&gt; [...], 37 =&gt; [...], 38 =&gt; [...], 39
+                    =&gt; [...], 40 =&gt; [...], 41 =&gt; [...], 42 =&gt; [...], 43 =&gt; [...], 44 =&gt; [...], 45
+                    =&gt; [...], 46 =&gt; [...], 47 =&gt; [...], 48 =&gt; [...], 49 =&gt; [...], 50 =&gt; [...], 51
+                    =&gt; [...]]; private ?Throwable ${Exception}previous = class ErrorException { protected $message =
+                    &#39;Array to string conversion&#39;; private string ${Exception}string = &#39;&#39;; protected
+                    $code = 0; protected string $file =
+                    &#39;C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php&#39;;
+                    protected int $line = 722; private array ${Exception}trace = [...]; private ?Throwable
+                    ${Exception}previous = NULL; protected int $severity = 2; public $xdebug_message =
+                    &#39;&lt;tr&gt;&lt;th align=\\&#39;left\\&#39; bgcolor=\\&#39;#f57900\\&#39;
+                    colspan=&quot;5&quot;&gt;&lt;span style=\\&#39;background-color: #cc0000; color: #fce94f; font-size:
+                    x-large;\\&#39;&gt;( ! )&lt;\/span&gt; ErrorException: Array to string conversion in
+                    C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Database\\\\Connection.php
+                    on line &lt;i&gt;722&lt;\/i&gt;&lt;\/th&gt;&lt;\/tr&gt;\\n&lt;tr&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#e9b96e\\&#39; colspan=\\&#39;5\\&#39;&gt;Call
+                    Stack&lt;\/th&gt;&lt;\/tr&gt;\\n&lt;tr&gt;&lt;th align=\\&#39;center\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;#&lt;\/th&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;Time&lt;\/th&gt;&lt;th align=\\&#39;left\\&#39;
+                    bgcolor=\\&#39;#eeeeec\\&#39;&gt;Memory&lt;\/th&gt;&lt;&#39;... }; public ?array $errorInfo = NULL;
+                    public $connectionName = &#39;mysql&#39;; protected $sql = &#39;insert into `forms` (`title`,
+                    `description`, `user_id`, `step_id`, `category_id`, `updated_at`, `created_at`) values (?, ?, ?, ?,
+                    ?, ?, ?)&#39;; protected $bindings = [0 =&gt; &#39;Falling down the trip&#39;, 1 =&gt; &#39;He fell
+                    down the trip and slip to the floor&#39;, 2 =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [...], 5 =&gt;
+                    &#39;2024-01-04 11:05:05&#39;, 6 =&gt; &#39;2024-01-04 11:05:05&#39;]; public $xdebug_message =
+                    &#39;&lt;tr&gt;&lt;th align=\\&#39;left\\&#39; bgcolor=\\&#39;#f57900\\&#39;
+                    colspan=&quot;5&quot;&gt;&lt;span style=\\&#39;background-color: #cc0000; color: #fce94f; font-size:
+                    x-large;\\&#39;&gt;( ! )&lt;\/span&gt; Illuminate\\\\Database\\\\QueryException: Array to string
+                    conversion (Connection: mysql, SQL: insert into `forms` (`title`, `description`, `user_id`,
+                    `step_id`, `category_id`, `updated_at`, `created_at`) values (Falling down the trip, He fell down
+                    the trip and slip to the floor, 1, 1, ?, 2024-01-04 11:05:05, 2024-01-04 11:05:05)) in
+                    C:\\\\wamp64\\\\www\\\\checker\\\\vendor\\\\laravel\\\\frame&#39;... }<\ /span>, <span>$query = <\
+                                /span><span>&#39;insert into `forms` (`title`, `description`, `user_id`, `step_id`,
+                                    `category_id`, `updated_at`, `created_at`) values (?, ?, ?, ?, ?, ?, ?)&#39;<\
+                                        /span>, <span>$bindings = <\ /span><span>[0 =&gt; &#39;Falling down the
+                                                    trip&#39;, 1 =&gt; &#39;He fell down the trip and slip to the
+                                                    floor&#39;, 2 =&gt; 1, 3 =&gt; &#39;1&#39;, 4 =&gt; [0 =&gt;
+                                                    &#39;1&#39;], 5 =&gt; &#39;2024-01-04 11:05:05&#39;, 6 =&gt;
+                                                    &#39;2024-01-04 11:05:05&#39;]<\ /span>, <span>$callback = <\ /span>
+                                                                <span>class Closure { virtual $closure =
+                                                                    &quot;$this-&gt;Illuminate\\Database\\{closure}&quot;
+                                                                    }<\ /span> )<\ /td>
+    <td title='C:\\wamp64\\www\\checker\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php'
+        bgcolor='#eeeeec'>...\\Connection.php<b>:<\ /b>956<\ /td>
+                    <\ /tr>\n"}
